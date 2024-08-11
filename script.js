@@ -40,3 +40,28 @@ function displayCurrentDate(selector) {
 toggleClassOnClick('.toggle-class', 'active');
 changeBackgroundColor('header', '#f0f0f0'); // Change header background color
 displayCurrentDate('#current-date'); // Display the current date in an element with id "current-date"
+
+
+// Image section
+function showImage(animal) {
+    let imagePath = '';
+
+    switch (animal) {
+        case 'duck':
+            imagePath = 'images/duck.jpg';
+            break;
+        case 'kangaroo':
+            imagePath = 'images/kangaroo.jpg';
+            break;
+        case 'lion':
+            imagePath = 'images/lion.jpg';
+            break;
+        case 'panda':
+            imagePath = 'images/panda.jpg';
+            break;
+        default:
+            imagePath = '';
+    }
+
+    document.getElementById('displayImage').src = imagePath;
+}

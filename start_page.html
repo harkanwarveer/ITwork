@@ -16,6 +16,7 @@
   <nav>
     <ul>
       <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="image_preview.html" class="nav-link">Images</a></li>
       <li><a href="#" class="nav-link">Our Team</a></li>
       <li><a href="#" class="nav-link">Projects</a></li>
       <li><a href="#" class="nav-link">Contact</a></li>
@@ -54,6 +55,19 @@
       </ul>
     </aside>
   </main>
+
+  <!-- Image display section -->
+  <section class="image-display-section">
+    <div class="button-container">
+        <button onclick="showImage('duck')">Show Duck</button>
+        <button onclick="showImage('kangaroo')">Show Kangaroo</button>
+        <button onclick="showImage('lion')">Show Lion</button>
+        <button onclick="showImage('panda')">Show Panda</button>
+    </div>
+    <div class="image-container" id="imageContainer">
+        <img id="displayImage" src="" alt="Click a button to display an image">
+    </div>
+  </section>
 
   <!-- And here is our main footer that is used across all the pages of our website -->
   <footer>
